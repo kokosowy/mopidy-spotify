@@ -93,7 +93,10 @@ Dependencies
   <https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs>`_ to stream Spotify
   audio, based on `librespot <https://github.com/librespot-org/librespot/>`_.
   This plugin is not yet available from apt.mopidy.com and must be built from
-  source (see below).
+  source (see below). Procedure requires Rust installation which can be an issue
+  on low-memory devices. Popular 512 MB RAM + 100 MB SWAP configuration
+  (Raspberry OS on RPi Zero) is not enough, so in such a case you will need to
+  increase SWAP.
 
 - ``Mopidy`` >= 3.4. The music server that Mopidy-Spotify extends.
 
